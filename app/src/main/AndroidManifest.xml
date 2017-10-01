@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.rajkumar.medione">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/pill"
+        android:label="Medione-Retailer"
+        android:supportsRtl="true"
+        android:theme="@style/CustomActionBarTheme">
+        <activity android:name=".login">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity android:name=".register" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <!--<receiver-->
+            <!--android:name=".Alarm_Receiver"-->
+            <!--android:enabled="true"-->
+            <!--android:exported="true" />-->
+
+        <!--<service-->
+            <!--android:name=".ringtoneplayingservice"-->
+            <!--android:enabled="true" />-->
+
+        <activity android:name=".splash_screen">
+
+        </activity>
+    </application>
+
+</manifest>
